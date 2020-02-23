@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8DFFBB80"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/value"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:accessibilityLiveRegion="@android:integer/config_mediumAnimTime"
+
+        android:background="@drawable/text_textview"
+        android:backgroundTint="#EF6C00"
+        android:ellipsize="middle"
+        android:fadingEdgeLength="@android:dimen/thumbnail_height"
+        android:fontFamily="monospace"
+        android:gravity="center_horizontal"
+        android:textColor="#004D40"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button"
+        style="@android:style/Widget.Material.Light.Button.Toggle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="328dp"
+        android:accessibilityLiveRegion="@android:integer/config_mediumAnimTime"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#F57F17"
+        android:elevation="@android:dimen/app_icon_size"
+        android:ellipsize="middle"
+        android:onClick="onClick"
+        android:scrollbarTrackHorizontal="@android:drawable/ic_dialog_map"
+        android:shadowColor="#00695C"
+        android:stateListAnimator="@android:anim/fade_out"
+        android:text="talk"
+        android:textColor="#00695C"
+        android:textColorHint="#004D40"
+        android:textCursorDrawable="@drawable/common_google_signin_btn_icon_light_normal"
+        android:textSelectHandle="@drawable/common_google_signin_btn_icon_dark_normal"
+        android:textSelectHandleLeft="@drawable/common_google_signin_btn_icon_light"
+        android:textSelectHandleRight="@drawable/common_google_signin_btn_icon_light"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:transformPivotX="?attr/dialogPreferredPadding" />
+
+</RelativeLayout>
